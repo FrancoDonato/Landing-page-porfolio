@@ -1,0 +1,49 @@
+html, body{
+    background-color: white;
+}
+.navbar{
+    height:150px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.botones{
+    display: flex;
+    align-items: center;
+}
+.inicio{
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin:  5px;
+    background-color: white;
+}
+.habilidades{
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin:  5px;
+    background-color: white;
+}
+
+.estudios{
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin:  5px;
+    background-color: white;
+}
+
+
+.contacto{
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin:  5px;
+    background-color: white;
+}
+
