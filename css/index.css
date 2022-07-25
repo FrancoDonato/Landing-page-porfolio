@@ -12,7 +12,7 @@ html, body{
     flex-wrap: wrap;
 }
 .logo{
-    height: 120px;
+    height: 130px;
 }
 .botones{
     display: flex;
