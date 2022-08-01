@@ -1,5 +1,13 @@
-html, body{
-    background-color: white;
+/*Franco Donato Gonzalez, camada 2517*/
+html{
+    background-color: rgb(3, 3, 94);
+}
+header{
+    background-color: rgb(45, 8, 153);
+}
+*{
+    margin: 0; 
+    padding: 0; 
 }
 .contenedor{
     height: 130px;
@@ -15,39 +23,56 @@ html, body{
     height: 130px;
 }
 .botones{
+    display: center;
+    margin: 10px;
+}
+
+li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.listnav{
+    list-style: none;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
+    font-style: inherit;
+    color:black;
+    border-bottom: none;
 
-*{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
 
+}
 .inicio{
-    border-bottom: none;
     margin:  5px;
-    background-color: white;
-}
-.habilidades{
-    border-bottom: none;
-    margin:  5px;
-    background-color: white;
 }
 
-.estudios{
-    border-bottom: none;
+.productos{
     margin:  5px;
-    background-color: white;
+}
+
+.contratar{
+    margin:  5px;
 }
 
 
 .contacto{
-    border-bottom: none;
     margin:  5px;
-    background-color: white;
 }
 
+.inicio:hover{
+    color:floralwhite;
+}
 
+.productos:hover{
+    color:floralwhite;
+}
+.contratar:hover{
+    color:floralwhite;
+}
+.contacto:hover{
+    color:floralwhite;
+}
