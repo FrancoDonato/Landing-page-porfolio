@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>Landing page porfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <!--Franco Donato Gonzalez, camada 2517-->
@@ -15,7 +16,9 @@
              <img class="logo" src="./css/logo.png" alt="Mundotech"> 
             
              <nav class="navbar">
-                <ul>
+                <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle-menu">
+                <ul class="navbar-lista">
                         <li><a class="navbar-link" href="#hero">Inicio</a></li>
                         <li><a class="navbar-link" href="#about">Nosotros</a></li>
                         <li><a class="navbar-link" href="#products">Productos</a></li>
@@ -47,6 +50,8 @@
         </section>
 
         <section id="about">
+
+            <h1>¿Quienes somos?</h1>
 
             <p>Somos una empresa dedicada a brindarte los mejores
                 productos antes que nadie, nuestros productos
