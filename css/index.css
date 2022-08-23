@@ -45,10 +45,16 @@
 
 .navbar-link{
     text-decoration: none;
-    color: white;
+    color:gray;
     font-weight: 600;
+    transition: .5s;
+    cursor: pointer;
 }
- 
+
+.navbar-link:hover{
+    color: white;
+}
+
 .header img{
     height: 120%;
 }
@@ -100,16 +106,26 @@ main{
 }
 
 .btn-primario{
-    color: black;
+    color:grey;
     background-color: rgb(127, 213, 247);
+    transition: .5s;
+}
+
+.btn-primario:hover{
+    color:#000000;
     box-shadow: rgba(227, 226, 231, 0.884) 0px 5px 15px;
+    cursor: pointer;
 }
 
 .btn-secundario{
-    color:white;
+    color:gray;
     background-color: black;
+    transition: .5s;
+}
+.btn-secundario:hover{
+    color: white;
     box-shadow: rgba(227, 226, 231, 0.884) 0px 5px 15px;
-
+    cursor: pointer;
 }
 .hero-presentacion p{
     width: 60%;
