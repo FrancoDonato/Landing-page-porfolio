@@ -61,6 +61,11 @@
 
 .header img{
     height: 120%;
+    transition: ease-in-out 1s;;
+}
+.header img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /*Main*/
@@ -77,13 +82,26 @@ main{
 }
 
 #hero{
-    padding-top:80px;
+    padding-top:150px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 70%;
 }
 
+#hero img{
+    border-radius: 150%;
+    margin: 0%;
+    padding: 0%;
+    transition: ease-in-out 1s;;
+
+}
+#hero img:hover{
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.2);
+    
+}
 .hero-presentacion{
     display: flex;
     flex-direction: column;
@@ -92,11 +110,16 @@ main{
 }
 
 .hero-presentacion h1{
-    font-size: 1.9em;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
+
 .botones{
+    width: 60%;
     display: flex;
     gap: 15%;
 }
@@ -140,7 +163,7 @@ main{
     display: flex;
     flex-direction: column;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.6rem;
 
 }
 
@@ -151,41 +174,51 @@ main{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     width: 60%;
+    max-width: 1000px;
     font-weight: 600;
-    padding: 30px 0px;
-    max-width: 850px;
-    margin-top:5%;
-    margin-bottom:5%;
+    font-size: 1.5rem;
+    padding: 10%;
+    margin:10% 0;
     text-align:center;
     
 }
 
 #about h2{
     font-size: 3rem;;
+    width: 100%;
     margin-bottom: 10%;
     cursor: pointer;
+    text-align:center;
     padding: 0 5%;
     background: #3e4b5a;
-    border: 3px solid;
+    color: #434343;
+    border: 4px solid;
     border-color: rgba(72, 161, 161, 0.473);
     border-radius: 15px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 #about h2:hover{
     transform: scale(1.1);
-    border: 3px solid;
+    color: black;
     border-color: aqua;
-    box-shadow: rgba(81, 81, 201, 0.884) 5px 10px 15px;}
-/*products*/
+    border-radius: 30px;
+    box-shadow: rgba(59, 181, 211, 0.884) 5px 10px 15px;
+}
+
+    /*products*/
+
 #products{
     width: 90%;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
-    margin: 10%;
+    padding: 10%;
+    margin: 0;
 
 }
 
@@ -194,18 +227,22 @@ main{
     margin-bottom: 10%;
     cursor: pointer;
     padding: 0 5%;
+    max-width: 1200px;
     background: #3e4b5a;
     border: 3px solid;
+    color: #434343;
     border-color: rgba(72, 161, 161, 0.473);
+    box-shadow: rgba(39, 39, 48, 0.301) 5px 10px 15px;
     border-radius: 15px;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 #products h3:hover{
     transform: scale(1.1);
-    border: 3px solid;
+    color: black;
     border-color: aqua;
-    box-shadow: rgba(81, 81, 201, 0.884) 5px 10px 15px;
+    border-radius: 30px;
+    box-shadow: rgba(59, 181, 211, 0.884) 5px 10px 15px;
 }
 .contenedor-card{
     width: 80%;
@@ -237,6 +274,7 @@ main{
     background: #0a3c79;
     width: 18rem;
     height: 18rem;
+    overflow: hidden;
     border-radius: 15px;
     flex-direction: column;
     align-items: center;
@@ -263,7 +301,7 @@ main{
     align-items: center;
     position: absolute;
     color:rgb(243, 243, 243);
-    transition: 7s;
+    transition: 4s;
 }
 .card:hover .btn-primary{
     display: flex;
@@ -279,6 +317,7 @@ main{
 }
 .card-text{
     top: 0;
+    padding: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,8 +355,231 @@ main{
     transform: scale(1.1);
     transition: .5s;
 }
-/*Media quarys*/
+/*Contact*/
 
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+    width: 100%;
+}
+
+#contact h2{
+    font-size: 3rem;;
+    margin-bottom: 10%;
+    cursor: pointer;
+    padding: 0 5%;
+    max-width: 1200px;
+    background: #3e4b5a;
+    border: 3px solid;
+    color: #434343;
+    border-color: rgba(72, 161, 161, 0.473);
+    box-shadow: rgba(39, 39, 48, 0.301) 5px 10px 15px;
+    border-radius: 15px;
+    transition: 1s ease-in-out;
+}
+
+#contact h2:hover{
+    transform: scale(1.1);
+    color: black;
+    border-color: aqua;
+    border-radius: 30px;
+    max-width: 1000px;
+    box-shadow: rgba(59, 181, 211, 0.884) 5px 10px 15px;
+}
+
+.contenedor-contacto{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+}
+
+#contact h3{
+    font-size: 25px;
+    margin: 1rem;
+}
+
+
+.metodos-contacto p{
+    font-size: 1.3rem;
+}
+.contenedor-iconos{
+    margin-top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:50px;
+}
+
+.icono i{
+    display: flex;
+    font-size: 5rem;
+    transition: ease-in-out 2s;
+
+}
+.icono a{
+    text-decoration: none;
+}
+.icono{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #1d1d1d;
+    transition: ease-in-out 1s;
+    border-radius: 100%;
+    border: 3px solid;
+}
+
+.icono:hover:nth-child(1){
+    background: #540479;
+    box-shadow: rgba(216, 8, 216, 0.884)5px 5px 15px;
+    border: 6px solid;
+    border-color: #bb06e9;
+}
+.icono:hover:nth-child(2){
+    background: #0b7e07;
+    box-shadow: rgba(17, 201, 26, 0.884)5px 5px 15px;
+    border: 6px solid;
+    border-color: #16c410;
+}
+.icono:hover:nth-child(3){
+    background: #052680;
+    box-shadow: rgba(5, 21, 243, 0.884)5px 5px 15px;
+    border: 6px solid;
+    border-color: #1257bd;
+}
+.icono:hover:nth-child(4){
+    background: #970d0d;
+    box-shadow: rgba(192, 103, 103, 0.884)5px 5px 15px;
+    border: 6px solid;
+    border-color: #c41010;
+}
+.icono i:hover{
+    position: relative;
+    overflow: hidden;
+    transform: scale(1.4);
+}
+
+.direcciones{
+    display: flex;
+    text-align: left;
+    justify-content: start;
+    flex-direction: column;
+    list-style: none;    
+}
+.direcciones li{
+    font-size: 16px;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.direcciones i{
+    color:rgb(58, 71, 77);
+    font-size: 16px;
+    transition: ease-in-out .5s;
+
+}
+.direcciones i:hover{
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.contenedor-mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    border: solid 3px black;
+    border-color: #000000;
+    border-radius: 20px;
+    transition: ease-in-out 1s;
+    box-shadow: rgb(0, 0, 0) 0 10px 15px;
+}
+
+.contenedor-mapa:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border-color: #27dbcc;
+    box-shadow: rgb(17, 202, 187) 0px 5px 15px;
+
+}
+
+/*footer*/
+
+.footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    color: #474547;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+.pie-pagina{
+    display: flex;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pie-pagina h3{
+    color: rgb(70, 70, 70);
+    transition: ease-in-out .5s;
+}
+
+.pie-pagina h3:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.pie-pagina p{
+    color: rgb(70, 70, 70);
+    transition: ease-in-out .5s;
+}
+
+.pie-pagina p:hover{
+    transform: scale(1.1);
+    color: white;
+}
+/*Media quarys*/
+@media(max-width : 1500px){
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+    }
+    .contenedor-iconos{
+        margin: 20% 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap:50px;
+    }
+
+
+    .direcciones-mapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+
+    }
+    
+}
 @media(max-width : 992px){
     .hero-presentacion{
         display: flex;
