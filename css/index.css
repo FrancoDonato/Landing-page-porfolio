@@ -628,6 +628,7 @@ main{
     gap:40px
     }
     #products .h3{
+        margin-bottom: 20px;
         font-size: 2rem;
     }
     #contact h2{
@@ -673,9 +674,11 @@ main{
         font-size:1.2rem;
     }
     .pie-pagina h3{
+        text-align: center;
         font-size: 0.8rem;
     }
     .pie-pagina p{
+        text-align: center;
         font-size: 0.6rem;
     }
 }
